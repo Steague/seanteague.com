@@ -1,28 +1,87 @@
 .App {
-  text-align: center;
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.Section-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-title {
-  font-size: 1.5em;
+.Section:nth-child(even) {
+    background-color: #DDD;
 }
 
-.App-intro {
-  font-size: large;
+.Section {
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Section p {
+    width: 400px;
+}
+
+.Section-ShowMore-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Section-ShowMore {
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: inherit;
+    box-shadow: 0 10px 10px -10px #000;
+    transition: max-height 0.5s ease-out;
+}
+
+.Section-ShowMore.expanded {
+    max-height: 5000px;
+    transition: max-height 0.5s ease-in;
+}
+
+.ShowMore-Button {
+    border: 0;
+    background-color: transparent;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.Projects-Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    widtH: 80%;
+}
+
+.Projects-Grid .img {
+     grid-column: span 2;
+}
+
+.Projects-Grid .text {
+
+}
+
+.Hero-Pic {
+    width: 80%;
+    height: 80%;
+    max-width: 200px;
+    max-height: 200px;
+    margin: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #000;
 }
