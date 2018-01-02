@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import moment from 'moment';
 import { Projects } from './projects';
+import { Tools } from './tools';
 
 class App extends Component {
     render() {
@@ -11,11 +12,11 @@ class App extends Component {
 
         return (
             <div className="App">
-                <Menu>
+                {/* <Menu>
                     <a id="home" className="menu-item" href="/">Home</a>
                     <a id="about" className="menu-item" href="/about">About</a>
                     <a id="contact" className="menu-item" href="/contact">Contact</a>
-                </Menu>
+                </Menu> */}
                 <div className="Section-Container">
                     <div className="Section">
                         <img src="images/me.jpg" alt="Sean Teague" className="Hero-Pic" />
@@ -41,8 +42,8 @@ class App extends Component {
                         </p>
                         <p>
                             Additionally, I've been involved with Hackbright
-                            Academy, teaching new generations of all female
-                            engineers both Python and Javascript.
+                            Academy, teaching new generations of women engineers
+                            both Python and Javascript.
                         </p>
                         <p>
                             I offer a range of skills and services from basic
@@ -50,14 +51,26 @@ class App extends Component {
                             back-end CMS applications to front-end user
                             experiences.
                         </p>
+                        <h3>Contact Info</h3>
+                        <div className="Contact-Container">
+                            <h4>Address</h4>
+                            <p>
+                                5046 Foothills Rd.<br />
+                                Apt. B<br />
+                                Lake Oswego, OR 97034
+                            </p>
+                            <h4>Phone</h4>
+                            <p>
+                                (15) 378-3004
+                            </p>
+                            <h4>Email</h4>
+                            <p>
+                                <a href="mailto:sean@seanteague.com">sean@seanteague.com</a>
+                            </p>
+                        </div>
                     </div>
                     <Projects />
-                    <div className="Section">
-                        <h2>Tools I Use</h2>
-                    </div>
-                    <div className="Section">
-                        <h2>Contact Me</h2>
-                    </div>
+                    <Tools />
                 </div>
             </div>
         );

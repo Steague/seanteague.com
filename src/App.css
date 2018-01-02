@@ -76,6 +76,35 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
+.RoundLogo {
+    border-radius: 25%;
+    padding: 10px;
+    box-shadow: 0 0 20px #000;
+    background-color: #FFF;
+    margin-bottom: 10px;
+}
+
+.RoundLogo img {
+    width: 100px;
+}
+
+.RoundLogo.RoundImage img {
+    border-radius: 25%;
+}
+
+.Tools-Container {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.Contact-Container {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    grid-gap: 10px;
+}
+
 .Hero-Pic {
     width: 80%;
     height: 80%;
